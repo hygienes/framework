@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 38px;
+  /* outline: none; */
+  text-transform: uppercase;
+  padding: 16px 32px;
+  color: #fff;
+  border-radius: 50px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn + .btn {
+  margin-left: 100px;
+}
+
+.btn--success {
+  background-color: #71be31;
+}
+
+.btn--warning {
+  background-color: #ffb702;
+}
+
+.btn--danger {
+  background-color: #ff623d;
+}
+
+.btn--disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+.btn-size-s {
+  padding: 16px;
+}
+
+.btn-size-l {
+  padding: 18px 100px;
+}
